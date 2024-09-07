@@ -1,6 +1,6 @@
 package co.nemoboard.boardservice.board.entity;
 
-import co.nemoboard.api.member.entity.Member;
+import co.nemoboard.boardservice.memberinfo.entity.MemberInfo;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
@@ -20,12 +20,12 @@ public class Board {
 	private String title;
 	private String content;
 	@ManyToOne(fetch = FetchType.LAZY)
-	@JoinColumn(name = "member_id", nullable = false)
-	private Member member;
+	@JoinColumn(name = "member_info_id", nullable = false)
+	private MemberInfo memberInfo;
 
-	public Board(String title, String content, Member member) {
+	public Board(String title, String content, MemberInfo memberInfo) {
 		this.title = title;
 		this.content = content;
-		this.member = member;
+		this.memberInfo = memberInfo;
 	}
 }

@@ -7,9 +7,9 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import co.nemoboard.api.board.dto.BoardCreateRequest;
-import co.nemoboard.api.board.entity.Board;
-import co.nemoboard.api.board.service.BoardService;
+import co.nemoboard.boardservice.board.dto.BoardCreateRequest;
+import co.nemoboard.boardservice.board.entity.Board;
+import co.nemoboard.boardservice.board.service.BoardService;
 import lombok.RequiredArgsConstructor;
 
 @RestController

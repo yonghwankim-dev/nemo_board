@@ -1,7 +1,7 @@
 package co.nemoboard.boardservice.board.dto;
 
-import co.nemoboard.api.board.entity.Board;
-import co.nemoboard.api.member.entity.Member;
+import co.nemoboard.boardservice.board.entity.Board;
+import co.nemoboard.boardservice.memberinfo.entity.MemberInfo;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +13,7 @@ public class BoardCreateRequest {
 	@Getter
 	private Long memberId;
 
-	public Board toEntity(Member member) {
-		return new Board(title, content, member);
+	public Board toEntity(MemberInfo memberInfo) {
+		return new Board(title, content, memberInfo);
 	}
 }
