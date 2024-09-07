@@ -1,1 +1,5 @@
 rootProject.name = 'nemo_board'
+include 'member-service'
+include 'nemo_board-common'
+include 'board-service'
+
