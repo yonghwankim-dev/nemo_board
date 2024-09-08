@@ -15,7 +15,7 @@ import lombok.RequiredArgsConstructor;
 public class MemberRestController {
 
 	private final MemberService memberService;
-	@PostMapping("/api/members")
+	@PostMapping("/api/members/register")
 	public ResponseEntity<Void> registerMember(@RequestBody MemberCreateRequest request) {
 		memberService.registerMember(request);
 		return ResponseEntity

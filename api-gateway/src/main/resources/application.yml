@@ -14,6 +14,14 @@ spring:
           uri: lb://board-service
           predicates:
             - Path=/api/boards/**
+      default-filters:
+        - name: GlobalAuthFilter
+  session:
+    redis:
+      namespace: 'spring:session'
+  data:
+    redis:
+      port: 6379
 eureka:
   instance:
     prefer-ip-address: true
