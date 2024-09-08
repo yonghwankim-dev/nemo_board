@@ -4,4 +4,5 @@ include 'nemo_board-common'
 include 'board-service'
 include 'discovery-server'
 include 'config-server'
+include 'api-gateway'
 

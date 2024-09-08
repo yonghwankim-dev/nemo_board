@@ -1,13 +1,13 @@
-package co.nemoboard.memberservice;
+package co.nemoboard.apigateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
+@SpringBootApplication
 @EnableDiscoveryClient
-@SpringBootApplication(scanBasePackages ={"co.nemoboard.memberservice", "co.nemoboard.nemoboardcommon"} )
-public class MemberServiceApplication {
+public class ApiGateWayApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(MemberServiceApplication.class, args);
+		SpringApplication.run(ApiGateWayApplication.class, args);
 	}
 }
